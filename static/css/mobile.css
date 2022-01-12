@@ -114,9 +114,54 @@
   }
 
   /*section*/
-  #home-page .owl-controls {
-    text-align: center;
-    padding: 0;
+  .owl-carousel, .owl-stage-outer {
+    max-height: 100%;
+
+  }
+  .owl-carousel .owl-item img {
+      width: auto;
+      height: 100%;
+      max-width: unset!important;
+    }
+  #home-page .owl-pagination{
+    display: none;
+  }
+  #home-page .owl-buttons{
+    margin-left: 0;
+    width:  100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+
+  }
+  #home-page  .owl-buttons .owl-prev{
+    left:  0;
+    position: absolute;
+    margin-left: 10%;
+  }
+  #home-page  .owl-buttons .owl-next{
+    right:  0;
+    position: absolute;
+    margin-right:  10%;
+  }
+  #text1{
+    z-index: 2;
+    position: absolute;
+    top: 70%;
+    margin-left: 5%;
+    text-align:  left;
+  }
+  #text1 h2{
+      font-size: 20px;
+    }
+  #text1 p{
+    font-size: 12px;
+  }
+  .mpd0{
+    padding:  0!important;
+  }
+  .mpdbtn{
+    padding:  10px 16px!important;
   }
   .lll{
     background-size: 80% 140%;
