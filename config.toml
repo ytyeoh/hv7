@@ -1,5 +1,6 @@
 title = "Hijauan Valdor - Phase 7"
-baseURL = "https://hijauanvaldor.com.my/phase-7"
+# baseURL = "https://hijauanvaldor.com.my/phase-7"
+baseURL = "https://ytyeoh.github.io/hv7/"
 languageCode = "en-us"
 theme = "hugo-universal-theme"
 
