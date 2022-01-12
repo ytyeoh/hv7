@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  {{ partial "head.html" . }}
+
+  <body>
+{{ partial "nav.html" . }}
+    <div id="all" class="overflow-auto">
+
+        <!-- {{ partial "top.html" . }} -->
+  
+    
+       
+
+        {{ partial "carousel.html" . }}
+
+        <!-- {{ partial "description.html" . }} -->
+
+        {{ partial "features.html" . }}
+
+        {{ partial "floor_plan.html" . }}
+
+        <!-- {{ partial "site_plan.html" . }} -->
+
+        {{ partial "accessibility.html" . }}
+
+        {{ partial "gallery.html" . }}
+
+        {{ partial "specifications.html" . }}
+
+      <!--   {{ partial "testimonials.html" . }}
+
+        {{ partial "see_more.html" . }}
+
+        {{ partial "recent_posts.html" . }}
+
+        {{ partial "clients.html" . }}
+ -->
+        {{ partial "footer.html" . }}
+
+    </div>
+    <!-- /#all -->
+
+    {{ partial "scripts.html" . }}
+
+  </body>
+</html>

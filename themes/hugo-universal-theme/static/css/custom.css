@@ -1,0 +1,19 @@
+/* your styles go here */
+
+.box-image-text .image {
+  min-height: 200px;
+  max-height: 200px;
+}
+
+.box-simple {
+  min-height: 230px;
+}
+
+
+#navbar{
+  background-color: #3A3933;  
+}
+
+.li-16{
+  width: 16.6667%;
+}

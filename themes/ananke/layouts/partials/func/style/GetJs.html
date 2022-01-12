@@ -1,0 +1,19 @@
+{{/*
+  js/GetResource
+  Get a style asset stored at `/assets/ananke/js`
+
+  @author @regisphilibert
+
+  @context String (.)
+
+  @access private
+
+  @returns Resource
+
+*/}}
+{{ $resource := dict }}
+{{ with resources.Get (print "/ananke/js/" .) }}
+  {{ $resource = . }}
+{{ end }}
+
+{{ return $resource }}
