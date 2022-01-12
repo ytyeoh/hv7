@@ -2,9 +2,6 @@
   .nav-btn{
     float: right;
   }
-  #about{
-    background: linear-gradient(270deg, #EAEAEA 42.6%, #fff 4%);
-  }
   .navbar{
     position: fixed;
     top: 0;
@@ -203,13 +200,14 @@ nav{
 /*description section*/
 
 .ll3{
-  padding: 0 3rem;
+  padding-left: 30%;
+  padding-right: 30%;
   padding-bottom: 5rem;
 }
 .ll3 h3{
   margin-top: 0;
   font-size: 3.5rem;
-  color: #3A3933;
+  color: #70A132;
   font-weight: normal;
 
 }

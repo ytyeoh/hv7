@@ -8,3 +8,9 @@
 .round{
   border-radius: 2rem;
 }
+.mt-5{
+  margin-top: 5rem!important;
+}
+.pt-5{
+  padding-top: 5rem!important;
+}
