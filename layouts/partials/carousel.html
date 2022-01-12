@@ -4,8 +4,10 @@
 <section class="mar0 home bg-light-grey">
     <div class="home-carousel fluid-container">
         <div class="homepage owl-carousel" id="home-page">
+
             {{ range sort .Site.Data.carousel "weight" }}
             <div class="home-item">
+
             	<picture>
                         {{ $imagePath := printf "/images/%s.jpg" .image }}
                         {{ $webp := printf "./images/%s.webp" .image }}
@@ -24,10 +26,23 @@
                           {{- with $large.RelPermalink -}}, {{.}} 1366w{{- end -}}"
                           img src="{{ $small.RelPermalink }}" alt="" class="img-responsive">
                 <picture>
+
             </div>
 	        {{ end }}
 
                 
+        </div>
+        <div id="text1" >
+        	<div class="row">
+        		<div class="col col-sm-4">
+        			<button type="button" class="white-text round btn secondary-back btn-lg btn-block">Phase 7</button>
+        		</div>
+        		<div class="col col-sm-12 ">
+        			<h2  class=" white-text ">{{.Site.Params.carousel.h2a}}</h2>
+        			<h2  class=" white-text ">{{.Site.Params.carousel.h2b}}</h2>
+        			<p class=" white-text ">{{.Site.Params.carousel.p}}</p>
+        		</div>
+        	</div>
         </div>
             <!-- /.project owl-slider -->
     </div>
