@@ -7,8 +7,8 @@
 
             {{ range sort .Site.Data.carousel "weight" }}
             <div class="home-item">
-
             	<picture>
+
                         {{ $imagePath := printf "/images/%s.jpg" .image }}
                         {{ $webp := printf "./images/%s.webp" .image }}
                         {{- $asset := resources.Get $imagePath -}}
