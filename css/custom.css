@@ -14,7 +14,7 @@
       z-index: 100;
       position: fixed;
       bottom: 0;
-      height:  100px;
+      height:  140px;
 
     li{
       color: black;
@@ -274,14 +274,24 @@ nav{
 }
 /*floor plan*/
 #floor-plan{
-  background:  linear-gradient(to right, #EAEAEA 30%, #fff 0%);
+  background: #fff /*linear-gradient(to right, #EAEAEA 30%, #fff 0%);*/
   height: 100%;
   margin-bottom: 0;
   padding-bottom: 5rem;
 }
+#floor-plan p{
+  font-size: 2rem;
+  margin-top: 20px;
+}
 #floor-plan .card{
   text-transform: capitalize;
   padding: 2rem 3rem;
+}
+.floor_plan_1{
+  border-top: 2px solid #70A132;
+  border-bottom: 2px solid #70A132;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
 }
 .digit{
   font-size: 7rem;
@@ -289,9 +299,10 @@ nav{
   padding-right: 3rem;
 }
 .internal{
-  position: absolute;
-  top: 6.5rem;
+  /*position: absolute;
+  top: 6.5rem;*/
   font-size: 2rem;
+  text-transform: capitalize;
 }
 /*site_plan*/
 #image-zoom{
@@ -329,18 +340,24 @@ nav{
   font-weight: 900;
 }
 #site-plan h4{
-  margin: 3rem 0;
+  margin: 1rem 0;
   font-size: 8rem;
 }
 /*accessibility*/
 #accessibility{
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: normal;
   padding-bottom: 5rem;
 }
+#accessibility .svg{
+  min-height: 50px;
+  width:  50px;
+  background-size: 100% 100%;
+  margin-top: 2rem;
+}
 #accessibility .top-border{
   border-top: 3px solid white;
-  padding-top: 15px;
+  padding-top: 5px;
 }
 #accessibility h3{
   margin-bottom: 10px;
