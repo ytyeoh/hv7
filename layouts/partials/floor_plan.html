@@ -1,8 +1,8 @@
 <section id='floor-plan'>
   <div class="container">
     <div class="row">
-		<div class="col-md-6 col col-xs-12 row">
-			<div class="col-md-12 col-xs-12 col">
+		<div class="col-md-6 col-xs-12 row bb-1">
+			<div class="col-md-12 col-xs-12 ">
 
 				{{ $webp := printf "./images/%s.webp" .Site.Data.type.typea.image }}
 		        {{ $imagePath := printf "/images/%s.jpg" .Site.Data.type.typea.image }}
@@ -22,27 +22,27 @@
 		          img src="{{ $small.RelPermalink }}" alt="" class="img-responsive">
 		        <picture>
 			</div>
-			<div class="col-md-12 col-xs-12 col row">
+			<div class="col-md-12 col-xs-12 row">
 				
-				<div class="col-md-4 col-xs-4 col ">
+				<div class="col-md-4 col-xs-4 ">
 					<h3 class="secondary-text">{{.Site.Data.type.typea.name}}</h3>
 				</div>
 
-				<div class="col-md-4 col-xs-4 col">
+				<div class="col-md-4 col-xs-4 ">
 					<p>Build-up-area</p>
 					<p>Land area</p>
 					<p>No. of units</p>
 				</div>
 
-				<div class="col-md-4 col-xs-4 col">
+				<div class="col-md-4 col-xs-4 ">
 					<p>:{{.Site.Data.type.typea.landup}}</p>
 					<p>:{{.Site.Data.type.typea.build_up}}</p>
 					<p>:{{.Site.Data.type.typea.unit}}</p>
 				</div>
 			</div>
-	      <div class="col-md-12 col-xs-12 row white10 text-center floor_plan_1">
+	      <div class="col-md-12 col-xs-12 row text-center floor_plan_1">
 	        {{ range $index, $element := sort .Site.Data.floor_plan "weight" }}
-		        <div class="col-md-4 col-xs-4 col">
+		        <div class="col-md-4 col-xs-4 ">
 		        	<div class="svg {{ .icon }}"></div>
 	                <div class="digit secondary-text">{{.digit}}</div>
 	                <div class="internal">{{ .name }}</div>
@@ -69,8 +69,8 @@
 	        <picture>
 	      </div>
         </div>
-        <div class="col-md-6 col col-xs-12 row">
-			<div class="col-md-12 col-xs-12 col">
+        <div class="col-md-6 col-xs-12 row">
+			<div class="col-md-12 col-xs-12 ">
 
 				{{ $webp := printf "./images/%s.webp" .Site.Data.type.typea.image }}
 		        {{ $imagePath := printf "/images/%s.jpg" .Site.Data.type.typea.image }}
@@ -90,27 +90,27 @@
 		          img src="{{ $small.RelPermalink }}" alt="" class="img-responsive">
 		        <picture>
 			</div>
-			<div class="col-md-12 col-xs-12 col row">
+			<div class="col-md-12 col-xs-12 row">
 				
-				<div class="col-md-4 col-xs-4 col ">
+				<div class="col-md-4 col-xs-4 ">
 					<h3 class="secondary-text">{{.Site.Data.type.typeb.name}}</h3>
 				</div>
 
-				<div class="col-md-4 col-xs-4 col">
+				<div class="col-md-4 col-xs-4 ">
 					<p>Build-up-area</p>
 					<p>Land area</p>
 					<p>No. of units</p>
 				</div>
 
-				<div class="col-md-4 col-xs-4 col">
+				<div class="col-md-4 col-xs-4 ">
 					<p>:{{.Site.Data.type.typeb.landup}}</p>
 					<p>:{{.Site.Data.type.typeb.build_up}}</p>
 					<p>:{{.Site.Data.type.typeb.unit}}</p>
 				</div>
 			</div>
-	      <div class="col-md-12 col-xs-12 row white10 text-center floor_plan_1">
+	      <div class="col-md-12 col-xs-12 row text-center floor_plan_1">
 	        {{ range $index, $element := sort .Site.Data.floor_plan "weight" }}
-		        <div class="col-md-4 col-xs-4 col">
+		        <div class="col-md-4 col-xs-4 ">
 		        	<div class="svg {{ .icon }}"></div>
 	                <div class="digit secondary-text">{{.digit}}</div>
 	                <div class="internal">{{ .name }}</div>

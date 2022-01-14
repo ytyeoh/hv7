@@ -290,8 +290,8 @@ nav{
 .floor_plan_1{
   border-top: 2px solid #70A132;
   border-bottom: 2px solid #70A132;
-  padding-bottom: 2rem;
-  padding-top: 2rem;
+  padding-bottom: 2rem!important;
+  padding-top: 2rem!important;
 }
 .digit{
   font-size: 7rem;
@@ -331,6 +331,12 @@ nav{
 }
 #site-plan .box-fea {
   padding: 6rem 3rem;
+}
+#site-plan .title{
+  position: absolute;
+  right: 18%;
+  top: 10%;
+
 }
 #site-plan .bg-light-grey{
   height: 100%;
