@@ -19,10 +19,10 @@
       right: 0;
       left: 0;
       z-index: 1030;
-      background: #3A3933;
+      background: #fff;
   }
   .btn-template-main{
-    color: white;
+    color: black;
   }
   .btn-template-main:hover, .btn-template-main:focus, .btn-template-main:active, .btn-template-main.active {
     background: #3A3933;
@@ -97,7 +97,7 @@
     border-radius: 0;
   }
   nav ul{
-    padding-top: 50px;
+    padding-top: 40%;
     float:  none!important;
     text-align: center;
   }
@@ -431,13 +431,16 @@
     width:100%;
     text-align: center;
     /*bottom: 1em;*/
-    top: 80%;
+    top: 93%;
     right:  0;
   }
   #footbar .btn{
-    width:90%;
-    margin: 0 5%;
+    width: 50%;
+    margin: 0;
     font-size: 1.5rem;
+  }
+  #footbar .btn-group{
+    width:  100%;
   }
   .pad22{
     padding: 2rem;

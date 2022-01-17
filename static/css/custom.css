@@ -487,6 +487,11 @@ nav{
   padding: 1rem 3rem;
 }
 
+.grey-back{
+  background-color: #eaeaea;
+  padding: 1rem 3rem;
+}
+
 .flex-inline{
   flex-direction: initial !important;
 }
