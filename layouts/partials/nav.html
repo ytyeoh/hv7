@@ -42,9 +42,7 @@
 	      <span class="sr-only">{{ i18n "navToggle" }}</span>
 	      <i class="fas fa-align-justify"></i>
 	    </div>
-	    <div id="navbar-close" class="hidden">
-	      <span class="glyphicon glyphicon-remove"></span>
-	    </div>
+	    
 	 </button>
     <div class="collapse navbar-collapse pt-5" id="navigation">
     	<div id="footbar">
@@ -53,8 +51,12 @@
     			<a href="#{{ .Site.Params.book_now }}" class="btn secondary-back py-2 px-3 ">book now</a>
 				</div>
 		</div>
+		<div id="close">
+			<div id="navbar-close" class="hidden" data-toggle="collapse" data-target="#navigation">
+		      <span class="glyphicon glyphicon-remove"></span>
+		    </div>
+		</div>
       <ul class="nav navbar-nav float-end">
-         
 
         {{ $current := . }}
         {{ range .Site.Menus.main }}

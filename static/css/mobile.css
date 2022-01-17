@@ -5,6 +5,8 @@
   }
   .navbar-toggle {
     display: block;
+    position: absolute;
+    right: 0;
   }
   .bd-example .fixed-top, .bd-example .sticky-top {
       position: static;
@@ -73,25 +75,53 @@
     font-size: 0;
     line-height: 0px; 
     height: 0px; 
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 15px;
-    margin-right: 5px;
     display: block;
+   
   }
   .navbar-brand img{
     height:35px;
   }
+  #close{
+    color:  white;
+    display: block;
+    position: absolute;
+    right: 0;
+    float: right;
+    margin-right: 15px;
+    padding: 9px 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 0;
+  }
+  nav ul{
+    padding-top: 50px;
+    float:  none!important;
+    text-align: center;
+  }
+  .navbar-nav{
+    margin: 0;
+  }
+  #navigation .float-end{
+    float:  none!important;
+  }
   #navigation{
-    background: url('../img/llgrey.png')no-repeat center right; 
-    color: #989689;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: 80% 60%;
-    background-position-x: 15rem;
+    /*background: url('../img/llgrey.png')no-repeat center right; */
+    color: #fff;
+    background-color: #000;
+     position: fixed;
+    top:  0;
+    left: 0;
+    background-size: 100% 100%;
+    /*background-position-x: 15rem;*/
     margin-top: 5rem;
     width: 100%;
+    padding: 0!important;
+    margin: 0;
+    height: 100%;
+    /*margin-top: 40px;*/
   }
   #navigation .phase{
     font-size: 1rem;
@@ -102,6 +132,7 @@
   }
 
   .navbar ul.nav > li > a {
+    color: #fff;
     text-transform: uppercase;
     text-decoration: none;
     font-weight: normal;
@@ -110,7 +141,7 @@
   }
   .li-16{
     width: 100%;
-    text-align: left
+    text-align: center;
   }
 
   /*section*/
@@ -398,9 +429,10 @@
   }
   #footbar{
     width:100%;
-    right: 0;
     text-align: center;
-    bottom: 1em;
+    /*bottom: 1em;*/
+    top: 80%;
+    right:  0;
   }
   #footbar .btn{
     width:90%;
