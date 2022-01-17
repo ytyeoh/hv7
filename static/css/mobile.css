@@ -107,13 +107,21 @@
   #navigation .float-end{
     float:  none!important;
   }
+
+  .collapse.width, .collapsing{
+    -webkit-transition-property: width;
+    transition-property: width; 
+    transition-duration: 0.1s;
+    transition-timing-function: linear;
+
+  }
   #navigation{
     /*background: url('../img/llgrey.png')no-repeat center right; */
     color: #fff;
     background-color: #000;
      position: fixed;
     top:  0;
-    left: 0;
+    right: 0;
     background-size: 100% 100%;
     /*background-position-x: 15rem;*/
     margin-top: 5rem;
@@ -121,6 +129,7 @@
     padding: 0!important;
     margin: 0;
     height: 100%;
+    /*transition: ease-in-out .5s;*/
     /*margin-top: 40px;*/
   }
   #navigation .phase{
