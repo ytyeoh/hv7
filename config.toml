@@ -30,35 +30,35 @@ paginate = 10
     identifier="about"
     name = "about"
     url  = "#about"
-    weight = 1
+    weight = 6
 
 [[menu.main]]
     identifier="floor plan"
     name = "floor plan"
     url  = "#floor-plan"
-    weight = 2
+    weight = 5
 
 [[menu.main]]
     identifier = "location"
     name = "site plan"
     url  = "#site-plan"
-    weight = 3
+    weight = 4
 
 [[menu.main]]
     identifier = "contact"
     name = "Location"
-    url  = "#footer"
-    weight = 4
+    url  = "#location"
+    weight = 3
 [[menu.main]]
     identifier = "gallery"
     name = "gallery"
     url  = "#gallery"
-    weight = 5
+    weight = 2
 [[menu.main]]
     identifier = "specifications"
     name = "specifications"
     url  = "#specifications"
-    weight = 6
+    weight = 1
 
 
 [params]
@@ -111,7 +111,7 @@ paginate = 10
 [params.carousel]
     enable = true
     h2a = "single storey"
-    h2b = "semi-deached homes"
+    h2b = "semi-detached homes"
     p = "by Asas Dunia"
     # All carousel items are defined in their own files. You can find example items
     # at 'exampleSite/data/carousel'.
