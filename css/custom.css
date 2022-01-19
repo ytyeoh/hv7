@@ -18,7 +18,7 @@
 
     li{
       color: black;
-      
+
     }
     
   }
@@ -32,11 +32,16 @@
   width: 100%;
   height: 100%;
   z-index: 2;
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+74,000000+100&0+7,0+83,0.3+100 */
-  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 7%, rgba(0,0,0,0) 74%, rgba(0,0,0,0) 83%, rgba(0,0,0,0.3) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 7%,rgba(0,0,0,0) 74%,rgba(0,0,0,0) 83%,rgba(0,0,0,0.3) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  rgba(0,0,0,0) 7%,rgba(0,0,0,0) 74%,rgba(0,0,0,0) 83%,rgba(0,0,0,0.3) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#4d000000',GradientType=0 ); /* IE6-9 */
+
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+53,000000+99&0+54,0.45+100 */
+background: -moz-linear-gradient(top,  rgba(0,0,0,0) 53%, rgba(0,0,0,0) 54%, rgba(0,0,0,0.44) 99%, rgba(0,0,0,0.45) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 53%,rgba(0,0,0,0) 54%,rgba(0,0,0,0.44) 99%,rgba(0,0,0,0.45) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(0,0,0,0) 53%,rgba(0,0,0,0) 54%,rgba(0,0,0,0.44) 99%,rgba(0,0,0,0.45) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#73000000',GradientType=0 ); /* IE6-9 */
+
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com//* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e5e5e5+1,e5e5e5+1,e5e5e5+45,e5e5e5+65,e5e5e5+65,000000+100&0+56,0.5+100 */
+
+
 
 }
 .loce{
@@ -192,7 +197,7 @@ nav{
 #text1{
   z-index: 2;
   position: absolute;
-  top: 75%;
+  top: 70%;
   margin-left: 10%;
 }
 .owl-buttons{
@@ -330,6 +335,9 @@ nav{
   border-radius: 20rem;
   padding: 1rem;
 }
+section{
+  scroll-margin-top: 140px;
+}
 #site-plan .box-fea {
   padding: 6rem 3rem;
 }
@@ -452,6 +460,8 @@ nav{
 #footbar a{
   color: white;
   text-transform: uppercase;
+  font-family: Montserrat;
+  font-weight: 500;
 }
 #footbar .col-lg-6{
   padding:  0;
