@@ -2966,7 +2966,7 @@ fieldset[disabled] .btn-template-primary.active {
 }
 .navbar-nav {
   margin: 10.5px -15px;
-  width: 100%;
+  width: max-content;
 }
 .navbar-nav > li > a {
   padding-top: 10px;
@@ -2995,6 +2995,7 @@ fieldset[disabled] .btn-template-primary.active {
   }
   .navbar-nav > li {
     float: right;
+    position: relative;
   }
   .navbar-nav > li > a {
     padding-top: 11px;
