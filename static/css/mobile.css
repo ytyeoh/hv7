@@ -79,7 +79,17 @@
     line-height: 0px; 
     height: 0px; 
     display: block;
-   
+    width: 100%;
+  }
+  nav > .px5{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .navbar-brand svg{
+    height:  60px;
+    left:  0;
+    position: absolute;
+    width: 150px;
   }
   .navbar-brand img{
     height:35px;
