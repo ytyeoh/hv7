@@ -1,4 +1,4 @@
-<section id="site-plan" id="location" class="bg-light-grey">
+<section id="site-plan"  class="bg-light-grey">
   <div class="row display-flex">
     
     <div class="col-md-6 pad0">
@@ -53,6 +53,29 @@
           {{ end }}
         </div>
       </div>
+  </div>
+</section>
+<section id="location">
+	<div class="row">
+		<div class="col-md-12 white-bb" >
+	      	{{ $webp := printf "./img/%s.webp" .Site.Params.site_plan.map1 }}
+        {{ $imagePath := printf "/img/%s.png" .Site.Params.site_plan.map1 }}
+        {{- $asset := resources.Get $imagePath -}}
+        {{ $tiny := ($asset.Resize "400x q90") }}
+        {{ $small := ($asset.Resize "600x q90") }}
+        {{ $medium := ($asset.Resize "700x q90") }}
+        {{ $large := ($asset.Resize "900x q90") }}
+        <picture>
+          <source srcset="{{ $webp }}" type="image/webp">
+          <img 
+          srcset="
+          {{- with $tiny.RelPermalink -}}{{.}} 200w{{- end -}}
+          {{- with $small.RelPermalink -}}, {{.}} 768w{{- end -}}
+          {{- with $medium.RelPermalink -}}, {{.}} 1024w{{- end -}}
+          {{- with $large.RelPermalink -}}, {{.}} 1366w{{- end -}}"
+          img src="{{ $small.RelPermalink }}" alt="" class="img-responsive">
+        <picture>
+	    </div>
   </div>
 </section>
 <script>
