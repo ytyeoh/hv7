@@ -214,12 +214,15 @@ nav{
   margin-top: 0;
   font-size: 3.5rem;
   color: #70A132;
-  font-weight: normal;
+  font-weight: bold;
 
 }
 .ll3 p{
   font-size: 1.5rem;
   margin: 0;
+  font-family: Montserrat;
+  font-weight: normal;
+  color: #3a3933;
 }
 .ll3 lead{
   margin-bottom: 5rem;
@@ -392,6 +395,34 @@ section{
   margin: 1em;
   border-radius: 2rem;
 }
+#gallery .clickable{
+  height: 100px;
+}
+#gallery .owl-buttons{
+  position: absolute;
+  top: 35%;
+  left: 0;
+  right: 0;
+}
+#gallery .owl-buttons .owl-prev{
+  left: 0;
+  position: absolute;
+}
+#gallery .owl-buttons .owl-next{
+  right: 0;
+  position: absolute;
+}
+#gallery .owl-theme .owl-controls .owl-page.active span {
+    background: #fff;
+}
+
+
+#gallery .owl-theme .owl-controls .owl-page span, #specifications .owl-theme .owl-controls .owl-page span {
+    background: #70A132;
+}
+#gallery .owl-theme .owl-controls .owl-page.active span {
+    background: #70A132;
+}
 .image-box{
   margin-left: -1em;
 }
@@ -513,4 +544,7 @@ section{
 
 .rmb10{
   margin-bottom: -1em;
+}
+#tm{
+  font-size: 12px;
 }
