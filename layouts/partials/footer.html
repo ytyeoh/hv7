@@ -1,17 +1,21 @@
+{{ if isset .Site.Params "contact_us" }}
+	<div id="mail" class=" bg-light-grey">
+	    <div class="container" >
+	        <h4 class="align-left">{{ .Site.Params.contact_us | safeHTML }}</h4>
+
+	        <h6>{{ .Site.Params.email  }}</h6>
+
+	        <hr class="hidden-md hidden-lg hidden-sm">
+
+	    </div>
+	</div>
+{{ end }}
 <footer id="footer">
     <div class="container mx-3">
 
-        {{ if isset .Site.Params "contact_us" }}
-        <div class="col-md-8 col-sm-6">
-            <h4 class="align-left">{{ .Site.Params.contact_us | safeHTML }}</h4>
-
-            <h6>{{ .Site.Params.email  }}</h6>
-
-            <hr class="hidden-md hidden-lg hidden-sm">
-
         
         <!-- /.col-md-4 -->
-        {{ end }}
+   
             <div class="row">
                 
                 <div class="col-md-6 col-sm-12">
@@ -43,7 +47,7 @@
                 
             </div>
         <!-- /.col-md-4 -->
-        </div>
+        
  
         
         <!-- /.col-md-4 -->

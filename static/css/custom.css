@@ -432,6 +432,13 @@ section{
   margin: 1em;
   border-radius: 2rem;
 }
+#specifications p{
+font-weight: normal;
+font-size: 12px;
+text-align: left;
+color: #989689;
+
+}
 .panel-default .panel-heading {
     color: #333;
     background-color: #f5f5f5;
@@ -472,6 +479,20 @@ section{
 }
 #contact button{
   width:  100%;
+}
+#mail{
+  margin-top: 5rem;
+  padding: 3rem 0;
+}
+#mail h4{
+  color:  #70A132;
+  font-size: 18px;
+  font-weight: bold;
+}
+#mail h6{
+  font-size: 42px;
+  text-transform: lowercase;
+  font-weight: 300;
 }
 /*Footer*/
 #footer{

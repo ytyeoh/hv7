@@ -71,7 +71,7 @@ paginate = 10
     contact_form_ajax = false
     contact_title = "REGISTER YOUR INTEREST"
     contact_text_1 = "in the Hijauan Valdor Phase 7: Single Storey Semi-Detached Home"
-    contact_us = "contact us"
+    contact_us = "Have questions? reach us at:"
     email = "enquiries@assasdunia.com"
 
     # Format dates with Go's time formatting
