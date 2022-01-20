@@ -1,0 +1,12 @@
+name: 'building specifications'
+title:
+  - name: 'structure'
+    slug: 'reinforced concrete columns & structure steel'
+  - name: 'walls'
+    slug: 'cement bricks'
+  - name: 'roofing covering'
+    slug: 'bluescope primamaju-R Roof'
+  - name: 'roof framing'
+    slug: 'steel trusses or equivillient'
+
+id: 'a'

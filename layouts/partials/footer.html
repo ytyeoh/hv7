@@ -45,47 +45,7 @@
         <!-- /.col-md-4 -->
         </div>
  
-        <div class="col-md-4 col-sm-6" id="contact">
-            <h4>{{ .Site.Params.contact_title  }}</h4>
-            <form {{ with .Site.Params.contact_form_ajax }}class="contact-form-ajax"{{ else }}{{ end }} method="post" action="{{ .Site.Params.formspree_action }}">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="a" id="a" placeholder="Name">
-                            </div>
-                        </div>
-                        <div class="col-sm-12 loce">
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="a1" id="a1" placeholder="Name">
-                            </div>
-                        </div>
-                        {{ $title_plain := .Title | markdownify | plainify }}
-                        <input type="hidden" class="form-control" name="d" id="d"  value="{{  $title_plain }}">
-                        <div class="col-sm-12 loce">
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="a2" id="a2" placeholder="Name">
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="b" id="b" required placeholder="Mobile Number">
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <div class="form-group">
-                               <input type="email" autocomplete="email" class="form-control" name="c" id="c" required placeholder="Email">
-                            </div>
-                        </div>
-
-                        <div class="col-sm-12 text-center">
-                          <button type="submit" class="btn">I'm Interested</button>
-
-                        </div>
-                    </div>
-                    <!-- /.row -->
-                </form>
-
-        </div>
+        
         <!-- /.col-md-4 -->
   
 

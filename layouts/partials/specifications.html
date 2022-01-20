@@ -1,31 +1,85 @@
 <section id="specifications">
-    <div class="home-carousel container">
+    <div class="container">
              <div class=" row">
-                <div class="col  col-xs-12 ">
-                  <h3 class="secondary-text">SPECIFICATIONS</h3>
+                <div class="col  col-xs-12 col-md-6">
+	            	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+		            	{{ range .Site.Data.specifications }}
+		            	 <div class="panel panel-default">
+				            <div class="panel-heading" role="tab" id="headingOne">
+			                    <a role="button" class="chnage" data-toggle="collapse" data-parent="#accordion" href="#{{.id}}" aria-expanded="true" aria-controls="collapseOne">
+			                    	<h4 class="panel-title">{{.name}}<i class="more-less fas fa-angle-down"></i></h4>
+			                        
+			                    </a>
+				            </div>
+				            <div id="{{.id}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+				                <ul class="list-group">
+				                  {{ range .title }}
+								  <li class="list-group-item">
+								  	<div class="row">
+								  		<div class="col-xd-4 col-md-4">{{.name}}</div>
+								  		<div class="col-xd-8 col-md-8">{{.slug}}</div>
+								  	</div>
+								  </li>
+								 {{ end }}
+								</ul>
+				            </div>
+				        </div>
+				        {{ end }}
+				    </div>
                 </div>
-                <div class="col col-xs-12 image-box">
-                <div class="specifications image-box owl-carouse bg-light-greyl" id="desciption-page" id="ggg">
-                {{ range .Site.Params.specifications.img }}
-                <div class="item boxsha">
-                    <div class="row">
-                        <div class="col-sm-12 ">
-                            {{ $webp := printf "./img/%s.webp" .img }}
-                            {{ $imagePath := printf "/img/%s.png" .img }}
-                            {{- $asset := resources.Get $imagePath -}}
-                            {{ $tiny := ($asset.Resize "400x q90") }}
-                            {{ $small := ($asset.Resize "600x q90") }}
-                            {{ $medium := ($asset.Resize "700x q90") }}
-                            {{ $large := ($asset.Resize "900x q90") }}
-                            <picture>
-                              <source srcset="{{ $webp }}" type="image/webp"><a href="{{ $webp }}" data-lightbox="specifications"><img src="{{ $webp }}" alt="" class="img-responsive"></a>
-                            <picture>
-                        </div>
-                    </div>
-                </div>
-                {{ end }}             
+                 
+
+
+
+                <div class="col-md-6 col-sm-12 bg-light-grey round" id="contact">
+		            <h4 class="secondary-text">{{ .Site.Params.contact_title  }}</h4>
+		            <p>{{ .Site.Params.contact_text_1  }}</p>
+		            
+		            <form {{ with .Site.Params.contact_form_ajax }}class="contact-form-ajax"{{ else }}{{ end }} method="post" action="{{ .Site.Params.formspree_action }}">
+		                    <div class="row">
+		                        <div class="col-sm-12">
+		                            <div class="form-group">
+		                                <input type="text" class="form-control input-lg" name="a" id="a" placeholder="Name">
+		                            </div>
+		                        </div>
+		                        <div class="col-sm-12 loce">
+		                            <div class="form-group">
+		                                <input type="text" class="form-control input-lg" name="a1" id="a1" placeholder="Name">
+		                            </div>
+		                        </div>
+		                        {{ $title_plain := .Title | markdownify | plainify }}
+		                        <input type="hidden" class="form-control" name="d" id="d"  value="{{  $title_plain }}">
+		                        <div class="col-sm-12 loce">
+		                            <div class="form-group">
+		                                <input type="text" class="form-control input-lg" name="a2" id="a2" placeholder="Name">
+		                            </div>
+		                        </div>
+		                        <div class="col-sm-12">
+		                            <div class="form-group">
+		                                <input type="text" class="form-control input-lg" name="b" id="b" required placeholder="Mobile Number">
+		                            </div>
+		                        </div>
+		                        <div class="col-sm-12">
+		                            <div class="form-group">
+		                               <input type="email" autocomplete="email" class="form-control input-lg" name="c" id="c" required placeholder="Email">
+		                            </div>
+		                        </div>
+
+		                        <div class="col-sm-12 text-center">
+		                          <button type="submit" class="btn secondary-back white-text">I'm Interested</button>
+
+		                        </div>
+		                    </div>
+		                    <!-- /.row -->
+		                </form>
+
+		        </div>
             </div>
             <!-- /.project owl-slider -->
         </div>
     </div>
 </section>
+<script>
+	
+	
+</script>

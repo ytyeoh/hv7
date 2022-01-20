@@ -69,7 +69,8 @@ paginate = 10
     # Enable the contact form by entering your Formspree.io endpoint url
     formspree_action = "./email.php"
     contact_form_ajax = false
-    contact_title = "open for registration only"
+    contact_title = "REGISTER YOUR INTEREST"
+    contact_text_1 = "in the Hijauan Valdor Phase 7: Single Storey Semi-Detached Home"
     contact_us = "contact us"
     email = "enquiries@assasdunia.com"
 
