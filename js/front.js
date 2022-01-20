@@ -9,6 +9,7 @@ if ($.cookie('themeLayout')) {
 }
 
 $(function () {
+  collapse()
   sliderHomepage()
   sliders()
   fullScreenContainer()
@@ -22,6 +23,15 @@ $(function () {
   contactFormAjax()
   menuClose()
 })
+
+function collapse (){
+  $(".chnage").on('click', function(event){
+    $(".more-less").not($(this).find(".more-less")).removeClass('fa-angle-up').addClass('fa-angle-down');
+    $(this).find(".more-less").toggleClass('fa-angle-down fa-angle-up');
+
+
+});
+}
 
 // Ajax contact
 function contactFormAjax () {
@@ -448,11 +458,11 @@ function menuClose () {
 $(function() {
   $('#ChangeToggle').click(function() {
     $('#navbar-hamburger').toggleClass('hidden');
-    
+    $('#navbar-close').toggleClass('hidden');  
   });
-  $('#close').click(function() {
+  $('#-close').click(function() {
     $('#navbar-hamburger').toggleClass('hidden');
-    
+    $('#navbar-close').toggleClass('hidden');  
   });
 });
 

@@ -443,6 +443,9 @@
   #specifications .home-carousel .owl-theme .owl-controls .owl-page.active span {
     background: #000;
   }
+  #contact{
+    padding: 5rem 5rem;
+  }
   #copyright .col-xs-2{
     width: 20%;
   }
