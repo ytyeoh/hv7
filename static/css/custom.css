@@ -507,6 +507,9 @@ color: #989689;
   text-transform: lowercase;
   font-weight: normal;
 }
+#footer iframe{
+  padding: 1rem;
+}
 #footer .lead{
   font-size: 1.8rem;
 }

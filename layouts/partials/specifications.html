@@ -14,10 +14,10 @@
 				            <div id="{{.id}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
 				                <ul class="list-group">
 				                  {{ range .title }}
-								  <li class="list-group-item">
+								  <li class="list-group-item text14m">
 								  	<div class="row">
-								  		<div class="col-xd-4 col-md-4">{{.name}}</div>
-								  		<div class="col-xd-8 col-md-8">{{.slug}}</div>
+								  		<div class=" col col-xs-4 col-md-4">{{.name}}</div>
+								  		<div class="col col-xs-8 col-md-8">{{.slug}}</div>
 								  	</div>
 								  </li>
 								 {{ end }}
@@ -29,7 +29,7 @@
 				    <p>NOTE: The Developer shall at its own cost and expense, install or construct of all the items listed above in accordance with the description set out and save for the item or items marked with an * which may be deleted if not applicable. All items mentioned above are subject to amendments and substitutions as may be required by the relevant approving authorities or the project Architect.</p>
                 </div>
                  
-                <div class="col-md-6 col-sm-12 bg-light-grey round" id="contact">
+                <div class="col-md-6 col-xs-12 bg-light-grey round" id="contact">
 		            <h4 class="secondary-text">{{ .Site.Params.contact_title  }}</h4>
 		            <p>{{ .Site.Params.contact_text_1  }}</p>
 		            

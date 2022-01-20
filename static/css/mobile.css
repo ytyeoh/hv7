@@ -165,16 +165,27 @@
     width: 100%;
     text-align: center;
   }
-
+  .text14m{
+    font-size: 10px;
+    
+    font-weight: normal;
+    
+    text-align: left;
+    color: #3a3933;
+  }
+  .text14m .col{
+    padding-left: 0;
+    padding-right: 0;
+  }
   /*section*/
-  .owl-carousel, .owl-stage-outer {
-    max-height: 100%;
-
+  #gallery .owl-carousel .owl-wrapper {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
   .owl-carousel .owl-item img {
       width: auto;
-      height: 100%;
-      max-width: unset!important;
+      height: auto;
+      max-width: 100%!important;
     }
   #home-page .owl-pagination{
     display: none;
@@ -469,6 +480,19 @@
   }
   .pad22{
     padding: 2rem;
+  }
+  #mail{
+    padding:  2rem 1rem;
+  }
+  #mail h4{
+    color:  #70A132;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  #mail h6{
+    font-size: 24px;
+    text-transform: lowercase;
+    font-weight: 300;
   }
   #footer h4,h5{
     font-size: 1.5rem;
