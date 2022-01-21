@@ -165,6 +165,10 @@
     width: 100%;
     text-align: center;
   }
+  .mp1{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
   .text14m{
     font-size: 10px;
     
@@ -469,6 +473,9 @@
     /*bottom: 1em;*/
     top: 93%;
     right:  0;
+  }
+  #footer iframe{
+    padding: 1rem 0;
   }
   #footbar .btn{
     width: 50%;

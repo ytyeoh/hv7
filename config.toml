@@ -87,12 +87,12 @@ paginate = 10
 
 [params.add1]
     name= "Penang Sales Office"
-    text = "Wisma Asas, No.228, Lebuh Chulia,<br>10200 Penang."
+    text = "Wisma Asas,<br>  No.228, Lebuh Chulia,<br>10200 Penang."
     tel="04-255 9999"
     fax="04-255 9888"
 [params.add2]
     name= "Hijauan Hills Sales Gallery"
-    text = "No.2, Jalan Hijauan Hills 3, Hijauan Hills,<br>14120 Simpang Ampat, Penang."
+    text = "No.2, Jalan Hijauan Hills 3,<br> Hijauan Hills,14120<br>  Simpang Ampat, Penang."
     tel="04-563 3999"
     fax="04-563 1999"
 [params.floor_plan]
