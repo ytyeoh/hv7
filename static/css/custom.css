@@ -550,15 +550,34 @@ color: #989689;
   font-weight: 900;
 }
 #copyright a{
-  color: #3A3933;
+  /*color: #3A3933;*/
   text-transform: uppercase;
+  font-weight: bold;
 }
 #copyright a:hover, a:focus{
   text-decoration: none;
+  color:  black;
+}
+
+.circle-icon {
+  color: white;
+  background: #70a132;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  vertical-align: middle;
+  font-size: 3rem;
+  /*padding: 15px;*/
+}
+.circle-icon:hover{
+  background: black;
 }
 #copyright p{
   font-size: 1rem;
   left: 3rem;
+  line-height: 1.1rem;
 }
 #footbar{
   position: fixed;
