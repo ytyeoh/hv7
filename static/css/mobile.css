@@ -474,9 +474,21 @@
     top: 93%;
     right:  0;
   }
+  #footer h5, #footer .lead{
+    font-size: 12px;
+  }
   #footer iframe{
     padding: 1rem 0;
   }
+  #footer .btm{
+    position: inherit;
+    text-align: right;
+    margin-top: 8px;
+    font-size: 12px;
+   /* bottom:  40px;
+    right:  0;*/
+  }
+
   #footbar .btn{
     width: 50%;
     margin: 0;
@@ -486,8 +498,9 @@
     width:  100%;
   }
   .pad22{
-    padding: 2rem;
+    padding: 0 2rem;
   }
+
   #mail{
     padding:  2rem 1rem;
   }

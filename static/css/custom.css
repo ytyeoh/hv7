@@ -519,6 +519,7 @@ color: #989689;
   position: absolute;
   bottom:  40px;
   right:  0;
+
 }
 #footer p{
   margin:  0;
@@ -546,8 +547,7 @@ color: #989689;
   opacity: 1; /* Firefox */
 }
 .btf{
-  font-weight: bolder;
-  font-weight: 900;
+  font-weight: bold;
 }
 #copyright a{
   /*color: #3A3933;*/
