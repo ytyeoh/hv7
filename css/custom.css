@@ -498,9 +498,14 @@ color: #989689;
 #footer{
   color:  #3A3933;
   font-size: 1.8rem;
+  margin-bottom: 1rem;
 }
-#footer h4,h5{
+#footer h4{
   font-size: 2rem;
+}
+#footer h5{
+  font-size: 18px;
+  font-weight: bold;
 }
 #footer h6{
   font-size: 1.8rem;
@@ -508,7 +513,15 @@ color: #989689;
   font-weight: normal;
 }
 #footer iframe{
-  padding: 1rem;
+  padding: 1rem 0;
+}
+#footer .btm{
+  position: absolute;
+  bottom:  40px;
+  right:  0;
+}
+#footer p{
+  margin:  0;
 }
 #footer .lead{
   font-size: 1.8rem;
