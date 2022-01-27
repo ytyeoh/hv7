@@ -21,6 +21,9 @@
 .mb-2{
   margin-bottom: 2rem;
 }
+.unbold{
+  font-weight: normal;
+}
 @media only screen and (max-width: 1199)  and (min-width: 992px){
   .hidden-md{
     display: none;
