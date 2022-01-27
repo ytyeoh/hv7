@@ -1,12 +1,7 @@
-name: 'floor finishes'
+name: 'Floor Finishes'
 title:
-  - name: 'structure'
-    slug: 'reinforced concrete columns & structure steel'
-  - name: 'walls'
-    slug: 'cement bricks'
-  - name: 'roofing covering'
-    slug: 'bluescope primamaju-R Roof'
-  - name: 'roof framing'
-    slug: 'steel trusses or equivillient'
-
+  - name: 'Living, Dining, Kitchen, Bedrooms, Bathrooms'
+    slug: 'Ceramic Tiles'
+  - name: 'Others'
+    slug: 'Cement Screed'
 id: 'b'

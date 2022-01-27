@@ -9,6 +9,7 @@
     width: 100%;
   }
 
+
   .navbar{
     background-color: #fff;
       z-index: 100;
@@ -139,6 +140,10 @@ nav{
 .col {
     display: table-cell; /* Make elements inside the container behave like table cells */
 }
+.home{
+  margin:  0;
+  margin-top: 140px;
+}
 .home-carousel .dark-mask {
     position: absolute;
     top: 0;
@@ -165,7 +170,7 @@ nav{
 }
 #home-page .owl-controls{
     margin-top: 0px; 
-    top: 40%;
+    top: 10%;
     position: absolute;
     height:  200px;
     width: 100%;
@@ -197,7 +202,7 @@ nav{
 #text1{
   z-index: 2;
   position: absolute;
-  top: 70%;
+  top: 50%;
   margin-left: 10%;
 }
 .owl-buttons{
@@ -206,8 +211,8 @@ nav{
 /*description section*/
 
 .ll3{
-  padding-left: 30%;
-  padding-right: 30%;
+  padding-left: 20%;
+  padding-right: 20%;
   padding-bottom: 5rem;
 }
 .ll3 h3{
@@ -260,6 +265,7 @@ nav{
   bottom: 5px;
   position: absolute;
 }
+
 /*features*/
 .card{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);  
@@ -279,7 +285,8 @@ nav{
 .bar p{
   padding: 1rem 0;
   text-transform: capitalize;
-  font-size: 2rem;
+  font-size: 1.9rem;
+  color:  #3A3933;
 }
 /*floor plan*/
 #floor-plan{
@@ -287,6 +294,10 @@ nav{
   height: 100%;
   margin-bottom: 0;
   padding-bottom: 5rem;
+}
+#floor-plan h3{
+  font-size: 36px;
+  font-weight: normal;
 }
 #floor-plan p{
   font-size: 2rem;
@@ -303,9 +314,10 @@ nav{
   padding-top: 2rem!important;
 }
 .digit{
-  font-size: 7rem;
+  font-size: 6rem;
   padding-left: 2rem;
   padding-right: 3rem;
+  font-weight: bold;
 }
 .internal{
   /*position: absolute;
@@ -391,7 +403,7 @@ section{
 }
 /*gallery*/
 #gallery .boxsha{
-  margin: 1em;
+  margin: 1em 0.5em;
   border-radius: 2rem;
 }
 #gallery .clickable{
@@ -423,7 +435,7 @@ section{
     background: #70A132;
 }
 .image-box{
-  margin-left: -1em;
+  /*margin-left: -1em;*/
 }
 /*specifications*/
 #specifications .boxsha{
@@ -438,6 +450,9 @@ font-size: 12px;
 text-align: left;
 color: #989689;
 
+}
+#contact .form-control{
+  border-radius:  15px;
 }
 .panel-default .panel-heading {
     color: #333;
@@ -489,10 +504,11 @@ color: #989689;
   font-size: 18px;
   font-weight: bold;
 }
-#mail h6{
+#mail h6 a{
   font-size: 42px;
   text-transform: lowercase;
   font-weight: 300;
+  color:  #3A3933;
 }
 /*Footer*/
 #footer{
@@ -506,6 +522,7 @@ color: #989689;
 #footer h5{
   font-size: 18px;
   font-weight: bold;
+  margin-top: 0;
 }
 #footer h6{
   font-size: 1.8rem;
@@ -514,6 +531,9 @@ color: #989689;
 }
 #footer iframe{
   padding: 1rem 0;
+  max-width: 100%;
+  /*padding-bottom: 75%;*/
+  /*max-height:  100%;*/
 }
 #footer .btm{
   position: absolute;
@@ -526,6 +546,7 @@ color: #989689;
 }
 #footer .lead{
   font-size: 1.8rem;
+  line-height: 2.1rem;
 }
 #footer .btn{
   text-transform: capitalize;
@@ -575,7 +596,7 @@ color: #989689;
   background: black;
 }
 #copyright p{
-  font-size: 1rem;
+  font-size: 1.2rem;
   left: 3rem;
   line-height: 1.1rem;
 }
@@ -589,6 +610,7 @@ color: #989689;
   text-transform: uppercase;
   font-family: Montserrat;
   font-weight: 500;
+  font-size: 15px;
 }
 #footbar .col-lg-6{
   padding:  0;
@@ -597,6 +619,13 @@ color: #989689;
   color: white;
   text-decoration: none;
 }
+#myBtn{
+  border: 0;
+  background-color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
 .primary-back{
   background-color: #3A3933;
   padding: 1rem 3rem;

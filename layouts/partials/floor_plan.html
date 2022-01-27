@@ -25,16 +25,16 @@
 			<div class="col-md-12 col-xs-12 row">
 				
 				<div class="col-md-4 col-xs-4 ">
-					<h3 class="secondary-text">{{.Site.Data.type.typea.name}}</h3>
+					<h3 class="secondary-text">{{.Site.Data.type.typea.name}} <b>{{.Site.Data.type.typea.plat}}</b></h3>
 				</div>
 
-				<div class="col-md-4 col-xs-4 ">
+				<div class="col-md-4 col-xs-4 align-right pad0">
 					<p>Build-up-area</p>
 					<p>Land area</p>
 					<p>No. of units</p>
 				</div>
 
-				<div class="col-md-4 col-xs-4 ">
+				<div class="col-md-4 col-xs-4 align-left pad0">
 					<p>:{{.Site.Data.type.typea.landup}}</p>
 					<p>:{{.Site.Data.type.typea.build_up}}</p>
 					<p>:{{.Site.Data.type.typea.unit}}</p>
@@ -72,8 +72,8 @@
         <div class="col-md-6 col-xs-12 row">
 			<div class="col-md-12 col-xs-12 ">
 
-				{{ $webp := printf "./images/%s.webp" .Site.Data.type.typea.image }}
-		        {{ $imagePath := printf "/images/%s.jpg" .Site.Data.type.typea.image }}
+				{{ $webp := printf "./images/%s.webp" .Site.Data.type.typeb.image }}
+		        {{ $imagePath := printf "/images/%s.jpg" .Site.Data.type.typeb.image }}
 		        {{- $asset := resources.Get $imagePath -}}
 		        {{ $tiny := ($asset.Resize "400x q90") }}
 		        {{ $small := ($asset.Resize "600x q90") }}
@@ -93,16 +93,16 @@
 			<div class="col-md-12 col-xs-12 row">
 				
 				<div class="col-md-4 col-xs-4 ">
-					<h3 class="secondary-text">{{.Site.Data.type.typeb.name}}</h3>
+					<h3 class="secondary-text">{{.Site.Data.type.typeb.name}} <b>{{.Site.Data.type.typeb.plat}}</b></h3>
 				</div>
 
-				<div class="col-md-4 col-xs-4 ">
+				<div class="col-md-4 col-xs-4 align-right pad0">
 					<p>Build-up-area</p>
 					<p>Land area</p>
 					<p>No. of units</p>
 				</div>
 
-				<div class="col-md-4 col-xs-4 ">
+				<div class="col-md-4 col-xs-4 align-left pad0">
 					<p>:{{.Site.Data.type.typeb.landup}}</p>
 					<p>:{{.Site.Data.type.typeb.build_up}}</p>
 					<p>:{{.Site.Data.type.typeb.unit}}</p>

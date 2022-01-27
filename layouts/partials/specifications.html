@@ -17,7 +17,7 @@
 								  <li class="list-group-item text14m">
 								  	<div class="row">
 								  		<div class=" col col-xs-4 col-md-4">{{.name}}</div>
-								  		<div class="col col-xs-8 col-md-8">{{.slug}}</div>
+								  		<div class="col col-xs-8 col-md-8">{{.slug | safeHTML }}</div>
 								  	</div>
 								  </li>
 								 {{ end }}

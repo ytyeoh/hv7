@@ -1,7 +1,7 @@
 {{ if isset .Site.Params "carousel" }}
 {{ if .Site.Params.carousel.enable }}
 {{ if gt (len .Site.Data.carousel) 0 }}
-<section class="mar0 home bg-light-grey">
+<section class=" home bg-light-grey">
     <div class="home-carousel fluid-container">
         <div class="homepage owl-carousel" id="home-page">
 
@@ -34,8 +34,8 @@
         </div>
         <div id="text1" >
         	<div class="row">
-        		<div class="col col-sm-2 col-xs-4 mpd0">
-        			<button type="button" class=" mpdbtn white-text round btn secondary-back btn-lg btn-block">Phase 7</button>
+        		<div class="col col-md-2 col-xs-4 mpd0">
+        			<button type="button" class="unbold mpdbtn white-text round btn secondary-back btn-lg btn-block">Phase 7</button>
         		</div>
         		<div class="col col-sm-12 col-xs-12">
         			<h2  class=" white-text ">{{.Site.Params.carousel.h2a}}</h2>

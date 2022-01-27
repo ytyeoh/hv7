@@ -1,0 +1,9 @@
+name: 'Wall Finishes'
+title:
+  - name: 'Bathrooms'
+    slug: 'Wall Tiles* - up to ceiling'
+  - name: 'Kitchen'
+    slug: 'Easy Clean Paint'
+  - name: 'Others'
+    slug: 'Plastered Wall'
+id: 'c'

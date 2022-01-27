@@ -352,6 +352,10 @@ function utils () {
     }, 1000)
   }
 }
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
 
 /* product detail gallery */
 function productDetailGallery (confDetailSwitch) {

@@ -522,6 +522,10 @@
     text-transform: lowercase;
     font-weight: normal;
   }
+  #footer iframe{
+    width: 300px;
+    height:  300px;
+  }
   
   
 }
