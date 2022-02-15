@@ -186,11 +186,27 @@
     padding-left: 3rem;
     padding-right: 3rem;
   }
+  .home-item{
+    position: relative;
+  }
+  /*.home-item picture{
+    width: 100%;
+    /*position: absolute;*/
+    /*left: 50%;
+    top: 0;
+    }*/
   .owl-carousel .owl-item img {
-      width: auto;
-      height: auto;
-      max-width: 100%!important;
-    }
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    height: 100%;
+    min-width: 150%;
+    max-width: 100%!important; 
+
+  }
+  .home {
+    padding-top: 0;
+  }
   #home-page .owl-pagination{
     display: none;
   }
@@ -509,7 +525,7 @@
     font-size: 14px;
     font-weight: bold;
   }
-  #mail h6{
+  #mail h6 a{
     font-size: 24px;
     text-transform: lowercase;
     font-weight: 300;
