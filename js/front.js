@@ -327,6 +327,10 @@ function utils () {
   })
 
   /* animated scrolling */
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
   $('.scroll-to, .scroll-to-top').click(function (event) {
     var fullUrl = this.href
     var parts = fullUrl.split('#')
@@ -352,10 +356,6 @@ function utils () {
     }, 1000)
   }
 }
-  function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
 
 /* product detail gallery */
 function productDetailGallery (confDetailSwitch) {
@@ -464,7 +464,7 @@ $(function() {
     $('#navbar-hamburger').toggleClass('hidden');
     $('#navbar-close').toggleClass('hidden');  
   });
-  $('#-close').click(function() {
+  $('#close').click(function() {
     $('#navbar-hamburger').toggleClass('hidden');
     $('#navbar-close').toggleClass('hidden');  
   });
