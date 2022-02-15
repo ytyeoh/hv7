@@ -28,8 +28,6 @@ function collapse (){
   $(".chnage").on('click', function(event){
     $(".more-less").not($(this).find(".more-less")).removeClass('fa-angle-up').addClass('fa-angle-down');
     $(this).find(".more-less").toggleClass('fa-angle-down fa-angle-up');
-
-
 });
 }
 
@@ -460,9 +458,9 @@ function menuClose () {
    });
 }
 $(function() {
-  $('#ChangeToggle').collapse({
-    $('#navbar-hamburger').toggleClass('hidden');
-    $('#navbar-close').toggleClass('hidden');  
+  $('#ChangeToggle').on('hidden.bs.collapse', function (e) {
+     $('#navbar-hamburger').toggleClass('hidden');
+    $('#navbar-close').toggleClass('hidden')
   })
 });
 

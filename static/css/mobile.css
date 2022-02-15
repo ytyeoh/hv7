@@ -202,7 +202,7 @@
     height: 100%;
     min-width: 150%;
     max-width: 100%!important; 
-
+    transform: translateY(-50%);
   }
   .home {
     padding-top: 0;
