@@ -196,16 +196,17 @@
     top: 0;
     }*/
   .owl-carousel .owl-item img {
-    display: block;
-    margin: 0 auto;
-    width: 50%;
+    
+    
+    width: 300%;
     height: 100%;
-    min-width: 150%;
-    max-width: 100%!important; 
-    transform: translateY(-50%);
+    min-width: 200%;
+    max-width: 300%!important; 
+
   }
   .home {
     padding-top: 0;
+    margin-top: 80px;
   }
   #home-page .owl-pagination{
     display: none;
