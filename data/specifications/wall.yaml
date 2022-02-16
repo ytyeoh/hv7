@@ -7,3 +7,5 @@ title:
   - name: 'Others'
     slug: 'Plastered Wall'
 id: 'c'
+
+weight: 3
