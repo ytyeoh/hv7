@@ -98,7 +98,8 @@ paginate = 10
 [params.floor_plan]
     land_area= "19’ x 71.85’"
     built_up = "19’ x 43.8’" 
-    floor_plan = "Floor_plan"
+    floor_plan_a = "Flr_Plan_Type_A"
+    floor_plan_b = "Flr_Plan_Type_B"
 [params.site_plan]
     img = "Site_plan"
     icon = "low-den"
@@ -134,7 +135,7 @@ paginate = 10
     type= "SINGLE STOREY <br> TERRACE HOUSE"
     
 [params.description]
-    title = "Peace and Tranquility, Enclaved in Greenery."   
+    title = "Peace and Tranquility, <br>Enclaved in Greenery."   
     description = "<p>The dream of having a place of your own called home is made a reality with Iris. The single storey terrace homes (Iris) blooms within an established guarded community, Hijauan Valdor, rich with healthy flourishing greens, clusters of linear parks and luxury of space with its low density concept. </p><br><p>Iris in Hijauan Valdor, situated near the 2nd Penang Bridge for quick access to the Island, while also connected to matured township like Alma, Simpang Ampat, Sungai Bakap, Nibong Tebal and the fast-developing Batu Kawan, all providing easy accessibility to shopping malls, schools, employment, social and other daily needs. </p><br><p>All this can be yours without breaking your bank!</p>" 
 
 [params.access]

@@ -28,16 +28,16 @@
 					<h3 class="secondary-text">{{.Site.Data.type.typea.name}} <b>{{.Site.Data.type.typea.plat}}</b></h3>
 				</div>
 
-				<div class="col-md-4 col-xs-4 align-right pad0 mmjj">
+				<div class="col-md-4 col-xs-4 align-left pad0 mmjj">
 					<p>Build-up-area</p>
 					<p>Land area</p>
 					<p>No. of units</p>
 				</div>
 
 				<div class="col-md-4 col-xs-3 align-left pad0">
-					<p>:{{.Site.Data.type.typea.landup}}</p>
-					<p>:{{.Site.Data.type.typea.build_up}}</p>
-					<p>:{{.Site.Data.type.typea.unit}}</p>
+					<p>: {{.Site.Data.type.typea.landup}}</p>
+					<p>: {{.Site.Data.type.typea.build_up}}</p>
+					<p>: {{.Site.Data.type.typea.unit}}</p>
 				</div>
 			</div>
 	      <div class="col-md-12 col-xs-12 row text-center floor_plan_1">
@@ -50,8 +50,8 @@
 	          {{ end }}
 	      </div>
 	      <div class="col-md-12 white-bb">
-	        {{ $webp := printf "./img/%s.webp" .Site.Params.floor_plan.floor_plan }}
-	        {{ $imagePath := printf "/img/%s.png" .Site.Params.floor_plan.floor_plan }}
+	        {{ $webp := printf "./img/%s.webp" .Site.Params.floor_plan.floor_plan_a }}
+	        {{ $imagePath := printf "/img/%s.png" .Site.Params.floor_plan.floor_plan_a }}
 	        {{- $asset := resources.Get $imagePath -}}
 	        {{ $tiny := ($asset.Resize "400x q90") }}
 	        {{ $small := ($asset.Resize "600x q90") }}
@@ -96,16 +96,16 @@
 					<h3 class="secondary-text">{{.Site.Data.type.typeb.name}} <b>{{.Site.Data.type.typeb.plat}}</b></h3>
 				</div>
 
-				<div class="col-md-4 col-xs-4 align-right mmjj pad0">
+				<div class="col-md-4 col-xs-4 align-left mmjj pad0">
 					<p>Build-up-area</p>
 					<p>Land area</p>
 					<p>No. of units</p>
 				</div>
 
 				<div class="col-md-4 col-xs-3 align-left pad0">
-					<p>:{{.Site.Data.type.typeb.landup}}</p>
-					<p>:{{.Site.Data.type.typeb.build_up}}</p>
-					<p>:{{.Site.Data.type.typeb.unit}}</p>
+					<p>: {{.Site.Data.type.typeb.landup}}</p>
+					<p>: {{.Site.Data.type.typeb.build_up}}</p>
+					<p>: {{.Site.Data.type.typeb.unit}}</p>
 				</div>
 			</div>
 	      <div class="col-md-12 col-xs-12 row text-center floor_plan_1">
@@ -118,8 +118,8 @@
 	          {{ end }}
 	      </div>
 	      <div class="col-md-12 white-bb">
-	        {{ $webp := printf "./img/%s.webp" .Site.Params.floor_plan.floor_plan }}
-	        {{ $imagePath := printf "/img/%s.png" .Site.Params.floor_plan.floor_plan }}
+	        {{ $webp := printf "./img/%s.webp" .Site.Params.floor_plan.floor_plan_b }}
+	        {{ $imagePath := printf "/img/%s.png" .Site.Params.floor_plan.floor_plan_b }}
 	        {{- $asset := resources.Get $imagePath -}}
 	        {{ $tiny := ($asset.Resize "400x q90") }}
 	        {{ $small := ($asset.Resize "600x q90") }}

@@ -2,4 +2,4 @@ name: 'Internal Telecommunication Trunking & Cabling'
 title:
   - name: 'Fiber Wall Socket'
 id: 'g'
-weight: 6
+weight: 10
