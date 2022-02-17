@@ -323,37 +323,17 @@ function utils () {
     e.preventDefault()
     window.open($(this).attr('href'))
   })
-
-  /* animated scrolling */
-  function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
-  $('.scroll-to, .scroll-to-top').click(function (event) {
-    var fullUrl = this.href
-    var parts = fullUrl.split('#')
-
-    if (parts.length > 1) {
-      scrollTo(fullUrl)
-      event.preventDefault()
-    }
-  })
-
-  function scrollTo (fullUrl) {
-    var parts = fullUrl.split('#')
-    var trgt = parts[1]
-    var targetOffset = $('#' + trgt).offset()
-    var targetTop = targetOffset.top - 100
-
-    if (targetTop < 0) {
-      targetTop = 0
-    }
-
-    $('html, body').animate({
-      scrollTop: targetTop
-    }, 1000)
-  }
 }
+
+/* animated scrolling */
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+$('.scroll-to, .scroll-to-top').click(function (event) {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+})
 
 /* product detail gallery */
 function productDetailGallery (confDetailSwitch) {

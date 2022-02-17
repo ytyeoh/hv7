@@ -359,7 +359,7 @@ section{
 #site-plan .title{
   position: absolute;
   right: 18%;
-  top: 10%;
+  top: 5%;
 }
 #site-plan .bg-light-grey{
   height: 100%;
@@ -383,6 +383,7 @@ section{
   width:  50px;
   background-size: 100% 100%;
   margin-top: 2rem;
+  margin-left: 15px;
 }
 #accessibility .top-border{
   border-top: 3px solid white;
@@ -411,9 +412,10 @@ section{
 }
 #gallery .owl-buttons{
   position: absolute;
-  top: 35%;
+  top: 38%;
   left: 0;
   right: 0;
+  margin: 0 3rem;
 }
 #gallery .owl-buttons .owl-prev{
   left: 0;
