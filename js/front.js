@@ -333,6 +333,7 @@ function topFunction() {
 $('.scroll-to, .scroll-to-top').click(function (event) {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
+  $('html, body').animate({scrollTop: 0}, 800); 
 })
 
 /* product detail gallery */
