@@ -1,7 +1,7 @@
 weight: 2
-name: "type"
-image: "2"
-plat: "B"
+name: "Roseum"
+image: "B"
+plat: ""
 build_up: "25'X48'"
 landup: "from 35'X80'"
 unit: "42"

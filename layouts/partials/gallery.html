@@ -3,12 +3,13 @@
             <div class=" row">
                 <div class="col  col-xs-12 image-box">
                 <div class="gallery  owl-carouse bg-light-greyl" id="desciption-page" id="ggg">
-                    {{ range .Site.Params.gallery.img }}
+
+                    {{ range  $num := (seq .Site.Params.gallery.img) }}
                     <div class="item boxsha">
                         <div class="aaa">
                             <div class="bbb">
-                              {{ $webp := printf "./img/gallery/%s.webp" .img }}
-                              {{ $imagePath := printf "/img/gallery/%s.jpg" .img }}
+                              {{ $webp := printf "./img/gallery/a%d.webp" . }}
+                              {{ $imagePath := printf "/img/gallery/a%d.jpg" . }}
                               {{- $asset := resources.Get $imagePath -}}
                               {{ $tiny := ($asset.Resize "400x q90") }}
                               {{ $small := ($asset.Resize "600x q90") }}
