@@ -1,5 +1,6 @@
 name: 'Internal Telecommunication Trunking & Cabling'
 title:
   - name: 'Fiber Wall Socket'
+    slug: 'nil'
 id: 'g'
 weight: 10

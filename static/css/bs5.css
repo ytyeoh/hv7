@@ -24,6 +24,9 @@
 .unbold{
   font-weight: normal;
 }
+.font-normal{
+  font-weight: normal;
+}
 @media only screen and (max-width: 1199)  and (min-width: 992px){
   .hidden-md{
     display: none;
