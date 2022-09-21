@@ -1,0 +1,12 @@
+{{ range $index, $element := sort .Site.Data.specifications "weight"  }}
+<table>
+	<h2 style="margin:0;text-decoration: underline; margin-top: 3rem;">{{ .name }}</h2>
+	{{ range .title }}
+		<tr>
+			<td>{{ .name }}</td>
+			<td>:{{ .slug | safeHTML }}</td>
+		</tr>
+	{{ end }}
+</table>
+
+{{ end }}
