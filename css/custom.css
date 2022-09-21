@@ -604,6 +604,8 @@ color: #989689;
   font-size: 1.2rem;
   left: 3rem;
   line-height: 1.1rem;
+  font-weight: 300;
+  color: black;
 }
 #footbar{
   position: fixed;
