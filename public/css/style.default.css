@@ -312,8 +312,8 @@ ul.list-style-none {
   font-weight: bold;
   letter-spacing: 0.08em;
   border-top: solid 5px transparent;
-  font-size: 2rem;
-  color: #fff;
+  font-size: 0.6em;
+  color: black;
 }
 
 .navbar ul.nav > li.active > a,
@@ -342,9 +342,9 @@ ul.list-style-none {
 .navbar.navbar-light ul.nav > li.open > a:hover,
 .navbar.navbar-light ul.nav > li > a:focus,
 .navbar.navbar-light ul.nav > li.open > a:focus {
-  border-top: solid 5px #70A132;
-  background: #70A132 !important;
-  color: #fff !important;
+  /*border-top: solid 5px #70A132;*/
+  background: #fff !important;
+  color: #70a132 !important;
 }
 .navbar ul.dropdown-menu {
   margin: 0;
@@ -1150,12 +1150,12 @@ fieldset[disabled] .btn-template-primary.active {
 .owl-next i{
   position: absolute;
   top: 12%;
-  left: 35%;
+  left: 37%;
 }
 .owl-prev i{
   position: absolute;
   top: 12%;
-  left: 25%;
+  left: 27%;
 }
 .home-carousel {
   position: relative;
@@ -1221,10 +1221,12 @@ fieldset[disabled] .btn-template-primary.active {
   }
 }
 .home-carousel h2 {
-  font-weight: 700;
+  font-weight: 900;
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 72px;
   letter-spacing: 0.08em;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 .home-carousel ul,
 .home-carousel p {
@@ -2521,8 +2523,8 @@ fieldset[disabled] .btn-template-primary.active {
   margin: 0 0 20px;
 }
 #footer {
-  background: #EAEAEA;
-  padding: 50px 0;
+  
+  /*padding: 50px 0;*/
   color: #999999;
 }
 #footer h1,
@@ -2621,7 +2623,7 @@ fieldset[disabled] .btn-template-primary.active {
   font-size: 1.8rem;
 }
 #copyright {
-  background: #EAEAEA;
+  /*background: #EAEAEA;*/
   color: #000;
   padding-bottom: 10rem;
   font-size: 1.4rem;
@@ -2825,8 +2827,7 @@ fieldset[disabled] .btn-template-primary.active {
 /* navbar */
 .navbar {
   position: relative;
-  min-height: 52px;
-  max-height: 58px;
+  height: 7rem;
   margin-bottom: 0;
   border-bottom: 1px solid transparent;
 }
@@ -2850,9 +2851,10 @@ fieldset[disabled] .btn-template-primary.active {
 }
 @media (min-width: 981px) {
   .navbar-collapse {
-    width: auto;
+    width: 80%;
     border-top: 0;
     box-shadow: none;
+    float: right;
   }
   .navbar-collapse.collapse {
     display: block !important;
@@ -2937,7 +2939,7 @@ fieldset[disabled] .btn-template-primary.active {
   font-size: 18px;
   line-height: 20px;
   height: 62px;
-  display: none;
+  display: block;
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -2966,7 +2968,7 @@ fieldset[disabled] .btn-template-primary.active {
 }
 .navbar-nav {
   margin: 10.5px -15px;
-  width: 100%;
+  width: max-content;
 }
 .navbar-nav > li > a {
   padding-top: 10px;
@@ -2988,15 +2990,19 @@ fieldset[disabled] .btn-template-primary.active {
 }
 @media (min-width: 981px) {
   .navbar-nav {
-    float: left;
+    float: right;
     margin: 0;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
   }
   .navbar-nav > li {
-    float: left;
+    float: right;
+    position: relative;
   }
   .navbar-nav > li > a {
     padding-top: 11px;
     padding-bottom: 11px;
+
   }
   .navbar-nav.navbar-right:last-child {
     margin-right: -15px;
@@ -3176,7 +3182,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 24px;
-  line-height: 1.42857143;
+  /*line-height: 1.42857143;*/
   color: #3A3933; 
   font-weight: lighter;
   overflow-x: hidden; // hide horizontal

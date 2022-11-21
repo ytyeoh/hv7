@@ -9,6 +9,7 @@ if ($.cookie('themeLayout')) {
 }
 
 $(function () {
+  collapse()
   sliderHomepage()
   sliders()
   fullScreenContainer()
@@ -22,6 +23,13 @@ $(function () {
   contactFormAjax()
   menuClose()
 })
+
+function collapse (){
+  $(".chnage").on('click', function(event){
+    $(".more-less").not($(this).find(".more-less")).removeClass('fa-angle-up').addClass('fa-angle-down');
+    $(this).find(".more-less").toggleClass('fa-angle-down fa-angle-up');
+});
+}
 
 // Ajax contact
 function contactFormAjax () {
@@ -179,8 +187,9 @@ function sliders () {
       singleItem: true,
       lazyLoad: false,
       addClassActive: true,
-       animateOut: 'slideOutUp',
-           animateIn: 'slideInUp',
+      animateOut: 'slideOutUp',
+      animateIn: 'slideInUp',
+      afterAction: function(elem){ $(elem). addClass("curent");},
       afterInit: function () {
         // animationsSlider()
       },
@@ -314,33 +323,18 @@ function utils () {
     e.preventDefault()
     window.open($(this).attr('href'))
   })
-
-  /* animated scrolling */
-  $('.scroll-to, .scroll-to-top').click(function (event) {
-    var fullUrl = this.href
-    var parts = fullUrl.split('#')
-
-    if (parts.length > 1) {
-      scrollTo(fullUrl)
-      event.preventDefault()
-    }
-  })
-
-  function scrollTo (fullUrl) {
-    var parts = fullUrl.split('#')
-    var trgt = parts[1]
-    var targetOffset = $('#' + trgt).offset()
-    var targetTop = targetOffset.top - 100
-
-    if (targetTop < 0) {
-      targetTop = 0
-    }
-
-    $('html, body').animate({
-      scrollTop: targetTop
-    }, 1000)
-  }
 }
+
+/* animated scrolling */
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+$('.scroll-to, .scroll-to-top').click(function (event) {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+  $('html, body').animate({scrollTop: 0}, 800); 
+})
 
 /* product detail gallery */
 function productDetailGallery (confDetailSwitch) {
@@ -375,15 +369,7 @@ function productDetailGallery (confDetailSwitch) {
     $('#mainImage img').attr('src', bigUrl)
   }
 }
-// close menu after pree
-function menuClose () {
-  var navMain = $("#navigation");
-    $('.li-16 a').click(function (e) {
-       navMain.collapse('hide');
-       $('#navbar-close').addClass('hidden');
-       $('#navbar-hamburger').removeClass('hidden');
-   });
-}
+
 
 /* product detail sizes */
 function productDetailSizes () {
@@ -443,12 +429,20 @@ $(window).resize(function () {
     windowWidth = newWindowWidth
   }
 })
-
+// close menu after pree
+function menuClose () {
+  var navMain = $("#navigation");
+    $('.li-16 a').click(function (e) {
+       navMain.collapse('hide');
+       $('#navbar-close').addClass('hidden');
+       $('#navbar-hamburger').removeClass('hidden');
+   });
+}
 $(function() {
-  $('#ChangeToggle').click(function() {
-    $('#navbar-hamburger').toggleClass('hidden');
-    $('#navbar-close').toggleClass('hidden');  
-  });
+  $('#ChangeToggle').on('hidden.bs.collapse', function (e) {
+     $('#navbar-hamburger').toggleClass('hidden');
+    $('#navbar-close').toggleClass('hidden')
+  })
 });
 
 

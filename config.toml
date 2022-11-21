@@ -1,6 +1,6 @@
 title = "Hijauan Valdor - Phase 7"
-# baseURL = "https://hijauanvaldor.com.my/phase-7"
-baseURL = "https://ytyeoh.github.io/hv7"
+baseURL = "https://hijauanvaldor.com.my/phase-7"
+# baseURL = "https://ytyeoh.github.io/hv7"
 languageCode = "en-us"
 theme = "hugo-universal-theme"
 
@@ -82,7 +82,7 @@ paginate = 10
     copyright1 = "Developer : Asas Dunia Berhad (198201014764 94528T) Land Owner : Mastiara Construction Sdn Bhd (107901008189 52475W) Developer License :2687/03-2024/0147(A) Validity: 5.3.22 - 4.3.24 Advertising & Sales Permit: 2687-62/03-2024/0184 Validity: 5.3.22 - 4.3.24 December 2024 Authority approving building plan : Majlis Bandaraya Seberang Perai. Building plan reference no. : MBSP/40/20-75/80. Expected date of completion : December 2023. Single Storey Semi-Detached : 158 units. Price : RM700,000-RM1,031,600Freehold, Free from encumbrances, 5% discount for Bumiputera. THIS ADVERTISEMENT HAS BEEN APPROVED BY THE MINISTRY OF HOUSING."
     copyright2 = "*All drawings and illustrations herein are artist’s impressions only. All plans, specifications, measurements and information contained herein are subject to variations, amendments and changes as may be required by the relevant authorities or project architect without prior notification to purchase and cannot form part of an offer or contract.<br><br>COPYRIGHT © {year} ASAS DUNIA BERHAD. ALL RIGHTS RESERVED."
 
-    download = "https://abc.com/doanload"
+    download = "/"
     book_now = "contact"
 
 [params.add1]

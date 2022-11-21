@@ -1,10 +1,15 @@
-@media only screen and (max-width: 981px) {
+@media only screen and (max-width: 600px) {
   .navbar{
     min-height: 62px;
     max-height: 1000px;
   }
+  .navbar-nav {
+    width: 100%;
+  }
   .navbar-toggle {
     display: block;
+    position: absolute;
+    right: 0;
   }
   .bd-example .fixed-top, .bd-example .sticky-top {
       position: static;
@@ -17,10 +22,10 @@
       right: 0;
       left: 0;
       z-index: 1030;
-      background: #3A3933;
+      background: #fff;
   }
   .btn-template-main{
-    color: white;
+    color: black;
   }
   .btn-template-main:hover, .btn-template-main:focus, .btn-template-main:active, .btn-template-main.active {
     background: #3A3933;
@@ -73,25 +78,72 @@
     font-size: 0;
     line-height: 0px; 
     height: 0px; 
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 15px;
-    margin-right: 5px;
     display: block;
+    width: 100%;
+  }
+  nav > .px5{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .navbar-brand svg{
+    height:  60px;
+    left:  0;
+    position: absolute;
+    width: 150px;
   }
   .navbar-brand img{
     height:35px;
   }
+  #close{
+    color:  white;
+    display: block;
+    position: absolute;
+    right: 0;
+    float: right;
+    margin-right: 15px;
+    padding: 9px 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 0;
+  }
+  nav ul{
+    padding-top: 40%;
+    float:  none!important;
+    text-align: center;
+  }
+  .navbar-nav{
+    margin: 0;
+  }
+  #navigation .float-end{
+    float:  none!important;
+  }
+
+  .collapse.width, .collapsing{
+    -webkit-transition-property: width;
+    transition-property: width; 
+    transition-duration: 0.1s;
+    transition-timing-function: linear;
+
+  }
   #navigation{
-    background: url('../img/llgrey.png')no-repeat center right; 
-    color: #989689;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: 80% 60%;
-    background-position-x: 15rem;
+    /*background: url('../img/llgrey.png')no-repeat center right; */
+    color: #fff;
+    background-color: #000;
+     position: fixed;
+    top:  0;
+    right: 0;
+    background-size: 100% 100%;
+    /*background-position-x: 15rem;*/
     margin-top: 5rem;
     width: 100%;
+    padding: 0!important;
+    margin: 0;
+    height: 100%;
+    /*transition: ease-in-out .5s;*/
+    /*margin-top: 40px;*/
   }
   #navigation .phase{
     font-size: 1rem;
@@ -102,6 +154,7 @@
   }
 
   .navbar ul.nav > li > a {
+    color: #fff;
     text-transform: uppercase;
     text-decoration: none;
     font-weight: normal;
@@ -110,13 +163,106 @@
   }
   .li-16{
     width: 100%;
-    text-align: left
-  }
-
-  /*section*/
-  #home-page .owl-controls {
     text-align: center;
-    padding: 0;
+  }
+  .mp1{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .text14m{
+    font-size: 10px;
+    
+    font-weight: normal;
+    
+    text-align: left;
+    color: #3a3933;
+  }
+  .text14m .col{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /*section*/
+  #gallery .owl-carousel .owl-item img{
+    width: 100%;
+    height:  100%;
+    min-width: 100%;
+  }
+  #gallery .boxsha {
+    margin: 1em 0.5em;
+    border-radius: 2rem;
+  }
+  .home-item{
+    position: relative;
+  }
+  /*.home-item picture{
+    width: 100%;
+    /*position: absolute;*/
+    /*left: 50%;
+    top: 0;
+    }*/
+  .owl-carousel .owl-item img {
+    
+    
+    width: 100%;
+    height:  100%;
+    min-width: 100%;
+
+  }
+  .home {
+    padding-top: 0;
+    margin-top: 80px;
+  }
+  #home-page .owl-pagination{
+    display: none;
+  }
+  #home-page .owl-controls {
+    margin-top: 0px;
+    top: 94%;
+    position: absolute;
+    height: 300px;
+    width: 50%;
+    left: 45%;
+    right: 0;
+    text-align: justify;
+  }
+  #home-page .owl-buttons{
+    margin-left: 0;
+    width:  100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+
+  }
+  #home-page  .owl-buttons .owl-prev{
+    left:  0;
+    position: absolute;
+    margin-left: 10%;
+  }
+  #home-page  .owl-buttons .owl-next{
+    right:  0;
+    position: absolute;
+    margin-right:  10%;
+  }
+  #text1{
+    z-index: 2;
+    position: absolute;
+    top: 25%;
+    margin-left: 5%;
+    text-align:  left;
+  }
+  #text1 h2{
+      font-size: 16px;
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+  #text1 p{
+    font-size: 12px;
+  }
+  .mpd0{
+    padding:  0!important;
+  }
+  .mpdbtn{
+    padding:  5px 6px!important;
   }
   .lll{
     background-size: 80% 140%;
@@ -188,8 +334,12 @@
     left: 0; bottom: 1em; right: 0;
   }
   .ll3 {
-    text-align: left;
+    text-align: center;
     padding: 0;
+  }
+  .ll3 h3{
+    text-align: center;
+    font-size: 3rem;
   }
   .ll3 p{
     font-size: 1rem;
@@ -202,20 +352,42 @@
     margin-right: 25%;
     padding-bottom: 0;
   }
+  .bb-1{
+    border-bottom: 1px solid grey;
+  }
   .box-fea {
-    padding: 5rem 3rem;
+    padding: 1rem 3rem;
   }
   .h300{
-    height: 300px;
+    height: 200px;
   }
+  .bar{
+    padding-bottom: 0;
+  }
+
   /*floor plan*/
   #floor-plan{
     background: #EAEAEA;
     font-size: 2rem;
+    padding-bottom: 0;
   }
-
+  #floor-plan .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9{
+      position: static;
+  }
+  #floor-plan p {
+    font-size: 1.3rem;
+    margin-top: 5px;
+  }
   #floor-plan h3{
     padding-left: 0;
+    margin-top: 5px;
+  }
+  .mmjj{
+    text-align: justify;
+  }
+  .floor_plan_1{
+    padding-bottom: 1rem!important;
+    padding-top: 1rem!important;
   }
   .lrmargin1{
     margin-left: 1rem;
@@ -245,9 +417,7 @@
   #floor-plan .card {
     padding: 5rem 3rem;
   }
-  #floor-plan img{
-    padding: 4rem 0;
-  }
+
   .white10{
     height: 100%;
     background: linear-gradient(180deg, #EAEAEA 85%, #fff 15%);
@@ -261,15 +431,29 @@
   .align-left-m{
     text-align: left;
   }
+  #site-plan .px-10{
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  #site-plan .title {
+    position: absolute;
+    right: 5%;
+    top: auto;
+    padding-top: 20px;
+  }
   #site-plan h3 {
     padding: 0 1rem;
     font-size: 2rem;
   }
-  #site-plan h4{
-    font-size: 4rem;
-    margin-top: 9rem;
-    padding: 0 1rem;
+  #accessibility h4{
+    font-size: 1rem;
     vertical-align:middle;
+    margin-top: 1rem;
+  }
+  #accessibility .top-border {
+    border-top: 3px solid white;
+    padding-top: 10px;
+    padding-bottom: 2px;
   }
   #site-plan h4 span{
     font-size: 2rem;
@@ -280,8 +464,10 @@
   #site-plan .box-fea {
     padding: 5rem 3rem;
   }
-  #site-plan .svg{
-    min-height: 60px;
+  #accessibility .svg{
+    min-height: 50px;
+    width: auto;
+    margin-top: 5px;
   }
   .map{
     padding-bottom: 1em;
@@ -291,7 +477,7 @@
   }
 
   #image-zoom {
-    max-height: 300px;
+    /*max-height: 300px;*/
   }
   #accessibility{
     font-size: 1rem;
@@ -312,24 +498,87 @@
   #specifications .home-carousel .owl-theme .owl-controls .owl-page.active span {
     background: #000;
   }
+  #specifications p{
+    margin-bottom: 20px;
+  }
+  #contact{
+    padding: 5rem 5rem;
+  }
+  #contact h4{
+    font-size: 24px;
+  }
+  #contact p{
+    font-size: 14px;
+  }
   #copyright .col-xs-2{
     width: 20%;
   }
   #copyright p{
     line-height: 1.1rem;
+    font-size: 1rem;
+    text-align: justify;
   }
   #footbar{
     width:100%;
-    right: 0;
     text-align: center;
-    bottom: 1em;
+    /*bottom: 1em;*/
+    top: 93%;
+    right:  0;
+  }
+  #footer h5, #footer .lead{
+    font-size: 12px;
+  }
+  #footer iframe{
+    padding: 1rem 0;
+  }
+  #footer .btm{
+    position: inherit;
+    text-align: right;
+    margin-top: 28px;
+    font-size: 12px;
+   /* bottom:  40px;
+    right:  0;*/
+  }
+  #myBtn{
+    font-size: 12px;
   }
   #footbar .btn{
-    width:90%;
-    margin: 0 5%;
+    width: 50%;
+    margin: 0;
     font-size: 1.5rem;
   }
-  .pad22{
-    padding: 2rem;
+  #footbar .btn-group{
+    width:  100%;
   }
+  .pad22{
+    padding: 0 2rem;
+  }
+
+  #mail{
+    padding:  2rem 1rem;
+  }
+  #mail h4{
+    color:  #70A132;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  #mail h6 a{
+    font-size: 24px;
+    text-transform: lowercase;
+    font-weight: 300;
+  }
+  #footer h4,h5{
+    font-size: 1.5rem;
+  }
+  #footer h6{
+    font-size: 1.3rem;
+    text-transform: lowercase;
+    font-weight: normal;
+  }
+  #footer iframe{
+    width: 350px;
+    height:  350px;
+  }
+  
+  
 }
